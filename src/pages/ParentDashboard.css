@@ -1,0 +1,148 @@
+/* --- Global Container --- */
+.dashboard-container {
+  max-width: 1000px; /* Slightly wider for better grid layout */
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8fafc; /* Very light blue-grey background */
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #1e293b;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* --- Section Cards (Modern Look) --- */
+.section-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.section-card h3 {
+  margin-top: 0;
+  color: #334155;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.2rem;
+}
+
+/* --- Status Specific Colors --- */
+.section-success {
+  border-top: 5px solid #10b981;
+}
+
+.section-next-screening {
+  border-top: 5px solid #f59e0b;
+}
+
+.section-celebrate {
+  border-top: 5px solid #3b82f6;
+  background: linear-gradient(to bottom right, #ffffff, #eff6ff);
+}
+
+/* --- Language Switcher --- */
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.language-switcher select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* --- Practice Section & Buttons --- */
+.practice-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.practice-buttons button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
+}
+
+.practice-buttons button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
+  transform: scale(1.02);
+}
+
+/* --- Analytics Grid --- */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* --- Progress Bar --- */
+.progress-bar {
+  height: 12px;
+  background-color: #f1f5f9;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-top: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #34d399);
+  transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-radius: 100px;
+}
+
+/* --- Export Section --- */
+.reports-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #f1f5f9;
+  border: 2px dashed #cbd5e1;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 600px) {
+  .dashboard-container {
+    margin: 0;
+    border-radius: 0;
+    padding: 1rem;
+  }
+  
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}

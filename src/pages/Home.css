@@ -1,0 +1,132 @@
+
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #fce4ec, #e0f7fa);
+  padding: 2rem;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+
+.carousel-wrapper {
+  max-width: 480px; 
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.carousel-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.banner-text {
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.banner-text h1 {
+  font-size: 1.6rem; 
+  font-weight: 700;
+  color: #2ECC71;
+  margin-bottom: 0.4rem;
+}
+
+.banner-text p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  min-width: 160px;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: scale(1.03);
+  background-color: #f0fff0;
+}
+
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  background-color: #2ECC71;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  min-width: 140px;
+}
+
+.cta-button:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+
+.footer-text {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .banner-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .banner-text p {
+    font-size: 0.95rem;
+  }
+
+  .feature-card {
+    min-width: 140px;
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

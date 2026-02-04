@@ -1,0 +1,185 @@
+/* 🌍 Global safety */
+* {
+  box-sizing: border-box;
+}
+
+/* 🧠 Main Wrapper */
+.smart-screening-wrapper {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: #ffffff;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* 🧠 Title */
+.smart-screening-wrapper h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* 👶 Child Selector */
+.child-select-wrapper {
+  margin-bottom: 2rem;
+}
+
+.child-select-wrapper h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+#child-select {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+#child-select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* ▶️ Start / Stop Button */
+.start-button {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem auto 2rem;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.start-button:hover {
+  background-color: #2980b9;
+}
+
+/* 🎉 Mascot Banner */
+.mascot-banner {
+  margin-bottom: 2rem;
+  animation: slideIn 0.5s ease;
+}
+
+/* 🎮 Screening Sections */
+.screening-section {
+  display: block;
+}
+
+/* ⚠️ IMPORTANT FIX:
+   Apply card styles ONLY to screening modules
+   NOT to ParentFeedback */
+.screening-section > .screening-module {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f4f8fc;
+  border-radius: 10px;
+  border: 1px solid #dce6f0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 🧠 Parent Feedback Wrapper FIX */
+.parent-feedback {
+  margin-top: 2rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* ✅ Submit Button */
+.submit-button {
+  background-color: #2ecc71;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.submit-button:hover {
+  background-color: #27ae60;
+}
+
+/* 📋 Report */
+.screening-report {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fefefe;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 🧩 Generic Card (used elsewhere safely) */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  margin-bottom: 16px;
+}
+
+/* 🔥 Heatmap */
+.heatmap {
+  display: grid;
+  grid-template-columns: repeat(20, 12px);
+  gap: 4px;
+}
+
+.heatmap .cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+/* 💡 Tips */
+.tips-list {
+  margin: 8px 0;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* 📱 Mobile Responsive */
+@media screen and (max-width: 600px) {
+  .smart-screening-wrapper {
+    padding: 1rem;
+  }
+
+  .start-button,
+  .submit-button {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  #child-select {
+    font-size: 0.95rem;
+  }
+
+  .mascot-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

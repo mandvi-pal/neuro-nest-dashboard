@@ -1,0 +1,80 @@
+
+.memory-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.emoji-preview p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.emoji-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.emoji-item {
+  font-size: 2rem;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 80px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card.flipped {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+}
+
+.success-msg {
+  animation: pop 0.6s ease-in-out;
+  font-size: 1.5rem;
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+.restart-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.restart-btn:hover {
+  background-color: #45a049;
+}

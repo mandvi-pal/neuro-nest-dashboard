@@ -1,0 +1,118 @@
+/* Container */
+.sound-emotion-game {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.sound-emotion-game h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Prompt */
+.match-prompt {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Emoji Button Grid */
+.sound-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Emoji Buttons */
+.choice-btn {
+  font-size: 2.5rem;
+  padding: 0.8rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.choice-btn:hover {
+  transform: scale(1.2);
+  background-color: #e6f7ff;
+}
+
+/* Score Display */
+.sound-emotion-game p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+/* Success Message */
+.success-msg {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 1rem;
+}
+
+/* Restart Button */
+.restart-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.restart-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Confetti Layer (optional override) */
+canvas.react-confetti {
+  z-index: 1000;
+  pointer-events: none;
+}
+.replay-btn {
+  margin-bottom: 1rem;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.replay-btn:hover {
+  background-color: #ffdd33;
+}
+.start-btn {
+  margin: 1rem 0;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.start-btn:hover {
+  background-color: #218838;
+}

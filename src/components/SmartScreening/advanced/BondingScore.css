@@ -1,0 +1,117 @@
+/* Card container */
+.bonding-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Title */
+.bonding-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Dropdown */
+.bonding-dropdown {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.bonding-dropdown:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
+/* Warning message */
+.bonding-warning {
+  font-size: 0.95rem;
+  color: #d9534f;
+  background-color: #fff3f3;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #f5c2c7;
+}
+
+/* Textarea */
+.bonding-textarea {
+  min-height: 100px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.bonding-textarea:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
+/* Button */
+.bonding-button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.bonding-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.bonding-button:hover:not(:disabled) {
+  background-color: #218838;
+  transform: scale(1.02);
+}
+
+/* Result text */
+.bonding-result {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Emoji feedback */
+.bonding-emoji {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #444;
+}
+.bonding-progress {
+  width: 100%;
+  height: 12px;
+  background-color: #eee;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+.bonding-progress-fill {
+  height: 100%;
+  background-color: #28a745;
+  transition: width 0.5s ease;
+}

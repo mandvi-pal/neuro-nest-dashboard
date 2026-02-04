@@ -1,0 +1,5 @@
+node_modules/
+venv310/
+.env
+__pycache__/
+*.pyc

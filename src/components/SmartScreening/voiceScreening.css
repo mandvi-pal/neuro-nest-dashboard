@@ -1,0 +1,147 @@
+.voice-screening-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #f0f0f0;
+}
+
+.voice-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.voice-header h3 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.voice-question-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+/* Mic Button Styling */
+.mic-trigger-btn {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background: #f1f2f6;
+  color: #3498db;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.mic-trigger-btn:hover:not(:disabled) {
+  background: #e1e4ea;
+  transform: translateY(-2px);
+}
+
+.mic-trigger-btn.is-listening {
+  background: #ffebee;
+  color: #e74c3c;
+  cursor: default;
+}
+
+/* Pulse Animation for Mic */
+.pulse-ring {
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.voice-divider {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  color: #95a5a6;
+  position: relative;
+}
+
+.voice-options-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.voice-opt-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #3498db;
+  background: white;
+  color: #3498db;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.voice-opt-btn:hover {
+  background: #3498db;
+  color: white;
+}
+
+.transcript-box {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/* Progress Bar */
+.voice-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.voice-progress-fill {
+  height: 100%;
+  background: #3498db;
+  transition: width 0.4s ease;
+}
+
+.step-count {
+  font-size: 0.8rem;
+  color: #95a5a6;
+  margin-top: 5px;
+}
+
+.voice-complete-ui .success-star {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.voice-retry-btn {
+  margin-top: 1.5rem;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+}

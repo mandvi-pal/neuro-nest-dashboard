@@ -1,0 +1,70 @@
+.milestone-wrapper {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  margin: 1.5rem auto;
+  max-width: 720px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.milestone-wrapper h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.age-label {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.milestone-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.milestone-card h4 {
+  margin-bottom: 0.6rem;
+  color: #333;
+}
+
+.prediction-text {
+  font-weight: 600;
+  color: #00796b;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.4rem 0;
+}
+
+.score-row progress {
+  flex: 1;
+  height: 12px;
+  border-radius: 6px;
+  appearance: none;
+}
+
+.score-row progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 6px;
+}
+
+.score-row progress::-webkit-progress-value {
+  background-color: #4CAF50;
+  border-radius: 6px;
+}
+
+.screened-on, .next-date {
+  font-size: 0.95rem;
+  color: #555;
+}
