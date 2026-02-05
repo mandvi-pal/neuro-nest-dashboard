@@ -1,5 +1,5 @@
 import React from 'react';
-import './emotionHeatmap.css';
+import './EmotionHeatmap.css';
 
 const EmotionHeatmap = ({ logs = [], image }) => {
   
