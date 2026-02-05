@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getBondingScore, fetchChildren } from '../../../services/api';
-import './bondingScore.css';
+import './BondingScore.css';
 import MicroIntervention from './MicroIntervention'; 
 
 const BondingScore = () => {

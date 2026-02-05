@@ -12,7 +12,7 @@ import {
   Legend,
   Filler
 } from 'chart.js';
-import './growthTwin.css';
+import './GrowthTwin.css';
 
 // Register Chart components
 ChartJS.register(

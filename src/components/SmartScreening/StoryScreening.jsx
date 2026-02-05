@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Confetti from 'react-confetti';
-import './StoryScreening.css';
+import './storyScreening.css';
 
 // 1. Badi Question Bank (Aap isme aur stories add kar sakte hain)
 const allStoryData = [
