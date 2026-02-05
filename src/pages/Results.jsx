@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ChildSelector from '../components/ChildProfile/ChildSelector';
-import ChildProfile from '../components/ChildProfile/childProfile';
+import ChildProfile from '../components/ChildProfile/ChildProfile';
 import MilestoneCard from '../components/ChildProfile/MilestoneCard';
 import ProgressTracker from '../components/ChildProfile/ProgressTracker';
 import Recommendation from '../components/RecommendationEngine/Recommendation';
