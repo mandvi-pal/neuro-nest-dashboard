@@ -28,7 +28,7 @@ import {
   getMicroTips
 } from '../services/api';
 
-import './SmartScreening.css';
+import './smartscreening.css';
 
 const SmartScreening = () => {
   const [children, setChildren] = useState([]);
