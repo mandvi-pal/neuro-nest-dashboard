@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import MascotBanner from '../components/Common/MascotBanner';
+import MascotBanner from '../components/common/MascotBanner';
 import EmotionGame from '../components/SmartScreening/EmotionGame';
 import StoryScreening from '../components/SmartScreening/StoryScreening';
 import SoundGame from '../components/SmartScreening/SoundGame';
